@@ -11,6 +11,7 @@ import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
     return {
+        events: state.events
     };
 };
 
