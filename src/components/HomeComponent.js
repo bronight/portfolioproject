@@ -5,7 +5,7 @@ function Home(props) {
     return (
         <div className="container">
             <div className="row">
-                This is a test!
+                <h2>This is a test!</h2>
             </div>
         </div>
     );

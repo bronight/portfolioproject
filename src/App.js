@@ -1,14 +1,17 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import { Navbar, NavbarBrand } from 'reactstrap';
-import logo from './logo.svg';
+//import { Provider } from 'react-redux';
+//import { Navbar, NavbarBrand } from 'reactstrap';
+import { BrowserRouter } from 'react-router-dom';
+import Main from './components/MainComponent';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Main />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Main />
+      </div>
+    </BrowserRouter>
   );
 }
 
