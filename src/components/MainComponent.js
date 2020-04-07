@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Home from './HomeComponent';
+import TheCalendar from './CalendarComponent';
 /*
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
@@ -29,6 +30,7 @@ class Main extends Component {
                 {/* <Header /> */}
                 <Switch>
                     <Route path='/home' component={HomePage} />
+                    <Route exact path='/calendar' component={TheCalendar} />
                     <Redirect to='/home' />
                 </Switch>
                 {/* <Footer /> */}
