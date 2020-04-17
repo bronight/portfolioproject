@@ -1,10 +1,14 @@
-import { createStore } from 'redux';
-import { Reducer, initialState } from './reducer';
+import {createStore, combineReducers, applyMiddleware } from 'redux';
+import { Events } from './events';
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
 
 export const ConfigureStore = () => {
     const store = createStore(
-        Reducer,
-        initialState
+        combineReducers({
+            events: Events
+        }),
+        applyMiddleware(thunk, logger)
     );
 
     return store;
