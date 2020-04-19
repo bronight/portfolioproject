@@ -11,3 +11,85 @@
     background-color: white;
     margin: 40px;
 }
+
+.momText {
+    font-family: 'Tangerine';
+    font-size: 60px;
+}
+
+.deuxText {
+    font-family: 'Orbitron';
+    font-size: 60px;
+}
+
+.indexText {
+    font-family: 'Poppins';
+    font-size: 36px;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 10px;
+    background: white;
+    height: 120px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.site-footer {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.nav-link {
+    color: black;
+}
+
+#summary {
+    font-family: "Open Sans", "Helvetica", "sans-serif";
+    font-size: 16px;
+}
+
+.featureSummary {
+    font-family: "Open Sans", "Helvetica", "sans-serif";
+    font-size: 18px;
+}
+
+.loginForm {
+    background-color: white;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 1.1rem;
+    outline: 0;
+    max-width: 500px;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    /*height: 400px;
+    width: 100px;
+    padding: 50px;
+    margin: 50px;*/
+}
+
+#userName {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid slategrey;
+}
+
+#password {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid slategrey;
+}
+
+#loginLabel {
+    font-family: "Orbitron";
+}
+
