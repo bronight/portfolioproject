@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom';
 
 function About(props) {
 
-    const partners = props.partners.map(partner => {
+    /*const partners = props.partners.map(partner => {
         return (
             <Media key={partner.id} tag="li">
                 <RenderPartner partner={partner}/>
             </Media>
             
         );
-    });
+    });*/
 
     return (
         <div className="container">
@@ -69,7 +69,7 @@ function About(props) {
                 </div>
                 <div className="col mt-4">
                     <Media list>
-                        {partners}
+                    
                     </Media>
                 </div>
             </div>
