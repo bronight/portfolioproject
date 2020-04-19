@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import Home from './HomeComponent';
 import TheCalendar from './CalendarComponent';
+
 import Contact from './ContactComponent';
 import About from './AboutComponent';
-/*
-import Header from './HeaderComponent';
-import Footer from './FooterComponent';
 
-*/
+
+import { fetchEvents } from '../redux/ActionCreators';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
 
@@ -17,7 +16,16 @@ const mapStateToProps = state => {
     };
 };
 
+const mapDispatchToProps = {
+    fetchEvents: () => (fetchEvents())
+};
+
 class Main extends Component {
+
+    componentDidMount() {
+        this.props.fetchEvents();
+    }
+
     render() {
         const HomePage = () => {
             return (
@@ -28,18 +36,18 @@ class Main extends Component {
 
         return (
             <div>
-                {/* <Header /> */}
-                <Switch>
-                    <Route path='/home' component={HomePage} />
-                    <Route exact path='/calendar' component={TheCalendar} />
-                    <Route exact path="/contactus" component={Contact} />
-                    <Route exact path="/aboutus" render={() => <About partners={this.props.partners} />}/>
-                    <Redirect to='/home' />
-                </Switch>
-                {/* <Footer /> */}
+
+                <Header />
+                    <Switch>
+                        <Route path='/home' component={HomePage} />
+                        <Route exact path='/calendar' render={() => <TheCalendar events={this.props.events.events} /> } />
+                        <Redirect to='/home' />
+                    </Switch>
+                <Footer />
+
             </div>
         );
     };
 }
 
-export default withRouter(connect(mapStateToProps)(Main));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
