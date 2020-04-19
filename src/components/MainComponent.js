@@ -3,7 +3,12 @@ import Home from './HomeComponent';
 import TheCalendar from './CalendarComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
+<<<<<<< HEAD
 import Contact from './ContactComponent';
+=======
+
+import Contact from './ContactComponent'
+>>>>>>> f9369aeedb3dc44f2e2d82e36ad72da4ee075c08
 import About from './AboutComponent';
 
 
@@ -42,6 +47,8 @@ class Main extends Component {
                     <Switch>
                         <Route path='/home' component={HomePage} />
                         <Route exact path='/calendar' render={() => <TheCalendar events={this.props.events.events} /> } />
+                        <Route exact path='/about' component={About}/>
+                        <Route exact path='/contact' component={Contact}/>
                         <Redirect to='/home' />
                     </Switch>
                 <Footer />
