@@ -3,12 +3,7 @@ import Home from './HomeComponent';
 import TheCalendar from './CalendarComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-<<<<<<< HEAD
 import Contact from './ContactComponent';
-=======
-
-import Contact from './ContactComponent'
->>>>>>> f9369aeedb3dc44f2e2d82e36ad72da4ee075c08
 import About from './AboutComponent';
 
 
