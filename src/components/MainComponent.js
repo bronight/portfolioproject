@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Home from './HomeComponent';
 import TheCalendar from './CalendarComponent';
+import Header from './HeaderComponent';
 /*
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
@@ -37,7 +38,7 @@ class Main extends Component {
 
         return (
             <div>
-                {/* <Header /> */}
+                { <Header /> }
                 <Switch>
                     <Route path='/home' component={HomePage} />
                     <Route exact path='/calendar' render={() => <TheCalendar events={this.props.events.events} /> } />
