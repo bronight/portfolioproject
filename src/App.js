@@ -7,6 +7,7 @@ import './App.css';
 import './styles.css';
 import { ConfigureStore } from './redux/configureStore';
 
+
 const store = ConfigureStore();
 
 function App() {

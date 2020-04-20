@@ -3,9 +3,9 @@ import Home from './HomeComponent';
 import TheCalendar from './CalendarComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-
-import Contact from './ContactComponent'
+import Contact from './ContactComponent';
 import About from './AboutComponent';
+import TeamPage from './TeamComponent';
 
 
 import { fetchEvents } from '../redux/ActionCreators';
@@ -45,6 +45,7 @@ class Main extends Component {
                         <Route exact path='/calendar' render={() => <TheCalendar events={this.props.events.events} /> } />
                         <Route exact path='/about' component={About}/>
                         <Route exact path='/contact' component={Contact}/>
+                        <Route exact path='/team' component={TeamPage}/>
                         <Redirect to='/home' />
                     </Switch>
                 <Footer />
