@@ -6,7 +6,7 @@ import Footer from './FooterComponent';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
 import TeamPage from './TeamComponent';
-
+import ShoppingList from './ShoppingList'
 
 import { fetchEvents } from '../redux/ActionCreators';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
@@ -46,6 +46,7 @@ class Main extends Component {
                         <Route exact path='/about' component={About}/>
                         <Route exact path='/contact' component={Contact}/>
                         <Route exact path='/team' component={TeamPage}/>
+                        <Route exact path='/shoppinglist' component={ShoppingList}/>
                         <Redirect to='/home' />
                     </Switch>
                 <Footer />
