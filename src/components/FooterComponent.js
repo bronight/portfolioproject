@@ -16,8 +16,8 @@ import { Link } from "react-router-dom";
               <h5>Your apps</h5>
               <ul className="list-unstyled">
                 <li><Link to='/calendar'>Calendar</Link></li>
-                <li><Link to='/todo-list'>To-do list</Link></li>
-                <li><Link to='/shopping-list'>Shopping list</Link></li>
+                <li><Link to='/todolist'>To-do list</Link></li>
+                <li><Link to='/shoppinglist'>Shopping list</Link></li>
               </ul>
             </div>
             <div className="col-4 text-center">
